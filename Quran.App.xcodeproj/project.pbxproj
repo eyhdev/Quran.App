@@ -14,6 +14,8 @@
 		D4F9BE6E2B52AC760023329A /* Quran_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F9BE6D2B52AC760023329A /* Quran_AppTests.swift */; };
 		D4F9BE782B52AC760023329A /* Quran_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F9BE772B52AC760023329A /* Quran_AppUITests.swift */; };
 		D4F9BE7A2B52AC760023329A /* Quran_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F9BE792B52AC760023329A /* Quran_AppUITestsLaunchTests.swift */; };
+		D4F9BE892B52AD390023329A /* p3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4F9BE872B52AD390023329A /* p3.ttf */; };
+		D4F9BE8A2B52AD390023329A /* p4.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4F9BE882B52AD390023329A /* p4.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		D4F9BE732B52AC760023329A /* Quran.AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quran.AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F9BE772B52AC760023329A /* Quran_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quran_AppUITests.swift; sourceTree = "<group>"; };
 		D4F9BE792B52AC760023329A /* Quran_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quran_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D4F9BE872B52AD390023329A /* p3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = p3.ttf; sourceTree = "<group>"; };
+		D4F9BE882B52AD390023329A /* p4.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = p4.ttf; sourceTree = "<group>"; };
+		D4F9BE8B2B52AD5A0023329A /* Quran-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Quran-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +99,12 @@
 		D4F9BE5B2B52AC740023329A /* Quran.App */ = {
 			isa = PBXGroup;
 			children = (
+				D4F9BE8B2B52AD5A0023329A /* Quran-App-Info.plist */,
+				D4F9BE862B52AD170023329A /* Font */,
 				D4F9BE5C2B52AC740023329A /* Quran_AppApp.swift */,
 				D4F9BE5E2B52AC740023329A /* ContentView.swift */,
-				D4F9BE602B52AC760023329A /* Assets.xcassets */,
 				D4F9BE622B52AC760023329A /* Preview Content */,
+				D4F9BE602B52AC760023329A /* Assets.xcassets */,
 			);
 			path = Quran.App;
 			sourceTree = "<group>";
@@ -125,6 +132,15 @@
 				D4F9BE792B52AC760023329A /* Quran_AppUITestsLaunchTests.swift */,
 			);
 			path = Quran.AppUITests;
+			sourceTree = "<group>";
+		};
+		D4F9BE862B52AD170023329A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				D4F9BE872B52AD390023329A /* p3.ttf */,
+				D4F9BE882B52AD390023329A /* p4.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +229,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = D4F9BE502B52AC740023329A;
 			productRefGroup = D4F9BE5A2B52AC740023329A /* Products */;
@@ -233,6 +250,8 @@
 			files = (
 				D4F9BE642B52AC760023329A /* Preview Assets.xcassets in Resources */,
 				D4F9BE612B52AC760023329A /* Assets.xcassets in Resources */,
+				D4F9BE8A2B52AD390023329A /* p4.ttf in Resources */,
+				D4F9BE892B52AD390023329A /* p3.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +444,7 @@
 				DEVELOPMENT_TEAM = LPY59J6YN4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quran-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -437,9 +457,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "eyh.com.TaskManagerAppTest.Quran-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,6 +477,7 @@
 				DEVELOPMENT_TEAM = LPY59J6YN4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quran-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -466,9 +490,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "eyh.com.TaskManagerAppTest.Quran-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
